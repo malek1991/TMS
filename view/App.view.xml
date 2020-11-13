@@ -1,0 +1,62 @@
+﻿<mvc:View
+        xmlns:core="sap.ui.core"
+        xmlns:mvc="sap.ui.core.mvc"
+        xmlns="sap.m"
+        xmlns:tnt="sap.tnt"
+        xmlns:c="vistex.tms.control"
+        controllerName="vistex.tms.controller.App"
+        displayBlock="true"
+        busy="{globalModel>/appBusy}"
+        busyIndicatorDelay="0"
+        class="sapUiSizeCompact">
+    <tnt:ToolPage>
+        <tnt:header>
+            <tnt:ToolHeader>
+                <ToolbarSpacer width="1rem"/>
+                <!--<Button icon="sap-icon://menu2" type="Transparent" press="onTogglePage" tooltip="{i18n>ToggleMasterPage}"/>-->
+                <Button icon="sap-icon://home" type="Transparent" press="onNavHome" tooltip="{i18n>Home}"/>
+                <Title text="{i18n>AppTitle}"/>
+                <ToolbarSpacer width="calc(50% - 15%)"/>
+                <Title text="{globalModel>/headerTitle}"/>
+                <ToolbarSpacer/>
+                <Button class="notifLabel" icon="sap-icon://bell" type="Transparent"
+                        text="{= ${globalModel>/userInfo/Notifications}.length }" press="onNotificationButtonPress"
+                        visible="{= ${globalModel>/userInfo/Notifications} !== null &amp;&amp; ${globalModel>/userInfo/Notifications}.length > 0}"/>
+                <Text text="{globalModel>/userInfo/User/Name}"/>
+                <MenuButton type="Transparent" icon="sap-icon://person-placeholder" id="AdminControl">
+                    <menu>
+                        <Menu itemSelected="handleMenu">
+                            <items>
+                                <MenuItem visible="{path:'globalModel>/userInfo/User', formatter:'.isAdmin'}"
+                                          text="{i18n>Administration}"
+                                          key="administration"
+                                          icon="sap-icon://key-user-settings"/>
+                                <MenuItem text="{i18n>Theme}"
+                                          key="Theme"
+                                          icon="sap-icon://palette">
+                                    <items>
+                                        <MenuItem text="sap_fiori_3" key="theme"></MenuItem>
+                                        <MenuItem text="sap_fiori_3_hcb" key="theme"></MenuItem>
+                                        <MenuItem text="sap_fiori_3_hcw" key="theme"></MenuItem>
+                                        <MenuItem text="sap_belize" key="theme"></MenuItem>
+                                        <MenuItem text="sap_belize_plus" key="theme"></MenuItem>
+                                        <MenuItem text="sap_belize_hcb" key="theme"></MenuItem>
+                                        <MenuItem text="sap_belize_hcw" key="theme"></MenuItem>
+                                    </items>
+                                </MenuItem>
+                                <MenuItem text="{i18n>Logout}"
+                                          key="Logout"
+                                          icon="sap-icon://log"/>
+                            </items>
+                        </Menu>
+                    </menu>
+                </MenuButton>
+                <ToolbarSpacer width="1rem"/>
+            </tnt:ToolHeader>
+        </tnt:header>
+        <tnt:mainContents>
+            <App id="Vistex-DS"/>
+        </tnt:mainContents>
+    </tnt:ToolPage>
+
+</mvc:View>

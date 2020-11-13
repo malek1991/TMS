@@ -1,0 +1,7 @@
+.restrictHeight span {
+    font-size: 12px !important;
+}
+
+.displayInitial .sapMObjectIdentifierIcons {
+    display: initial !important;
+}

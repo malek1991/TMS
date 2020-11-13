@@ -1,0 +1,28 @@
+<mvc:View
+        controllerName="vistex.tms.controller.home.Home"
+        xmlns:mvc="sap.ui.core.mvc"
+        displayBlock="true"
+        busyIndicatorDelay="0"
+        busy="{viewModel>/busy}"
+        xmlns="sap.m"
+        xmlns:card="sap.f.cards"
+        xmlns:ovp="vistex.control.ovp">
+
+    <Page>
+        <ovp:OvpResizableLayout>
+            <ovp:cards>
+                <ovp:IntegrationCard cardHeight="2" cardWidth="2" height="100%">
+                    <ovp:header>
+                        <card:Header
+                                title="Buy bus ticket on-line"
+                                subtitle="Buy a single-ride ticket for a date"
+                                iconSrc="sap-icon://bus-public-transport"/>
+                    </ovp:header>
+                    <ovp:content>
+                        <Button text="Hello"/>
+                    </ovp:content>
+                </ovp:IntegrationCard>
+            </ovp:cards>
+        </ovp:OvpResizableLayout>
+    </Page>
+</mvc:View>

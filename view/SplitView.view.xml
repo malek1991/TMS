@@ -1,0 +1,10 @@
+<mvc:View
+        controllerName="vistex.tms.controller.SplitView"
+        xmlns:html="http://www.w3.org/1999/xhtml" xmlns:core="sap.ui.core"
+        xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+        displayBlock="true">
+    <Page showHeader="false">
+        <SplitApp id="SplitApp" mode="StretchCompressMode"/>
+    </Page>
+
+</mvc:View>

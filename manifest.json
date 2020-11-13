@@ -1,0 +1,145 @@
+{
+  "_version": "1.2.0",
+  "sap.app": {
+    "_version": "1.2.0",
+    "id": "vistex",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "title": "Transaction Management System",
+    "description": "{{appDescription}}",
+    "applicationVersion": {
+      "version": "1.0.0"
+    },
+    "dataSources": {
+    }
+  },
+  "sap.ui": {
+    "_version": "1.2.0",
+    "technology": "UI5",
+    "icons": {
+      "icon": "sap-icon://task",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    },
+    "supportedThemes": [
+      "sap_hcb",
+      "sap_bluecrystal"
+    ]
+  },
+  "sap.ui5": {
+    "_version": "1.2.0",
+    "handleValidation": true,
+    "rootView": {
+      "viewName": "vistex.tms.view.App",
+      "type": "XML",
+      "id": "Vistex-DS"
+    },
+    "dependencies": {
+      "minUI5Version": "1.64.0",
+      "libs": {
+        "sap.ui.core": {
+          "minVersion": "1.64.0"
+        },
+        "sap.m": {
+          "minVersion": "1.64.0"
+        },
+        "sap.ui.table": {
+          "minVersion": "1.64.0"
+        },
+        "sap.ui.layout": {
+          "minVersion": "1.64.0"
+        },
+        "sap.tnt": {
+          "minVersion": "1.64.0"
+        },
+        "sap.f": {
+          "minVersion": "1.64.0"
+        }
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "vistex.tms.i18n.i18n"
+        }
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "style/style.css"
+        },
+        {
+          "uri": "style/availability.css"
+        },
+        {
+          "uri": "style/HeatMap.css"
+        },
+        {
+          "uri": "style/legend.css"
+        },
+        {
+          "uri": "style/tree.css"
+        },
+        {
+          "uri": "style/VMSets.css"
+        },
+        {
+          "uri": "style/GTMS-iconsFont.css"
+        },
+        {
+          "uri": "style/gridstack.css"
+        },
+        {
+          "uri": "style/gridstack.min.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "viewPath": "vistex.tms.view",
+        "bypassed": {
+          "target": [
+            "notFound"
+          ]
+        },
+        "async": true
+      },
+      "routes": [
+        {
+          "pattern": "",
+          "name": "home",
+          "target": [
+            "home"
+          ]
+        }
+      ],
+      "targets": {
+        "home": {
+          "viewName": "Home",
+          "viewPath": "vistex.tms.view.home",
+          "viewId": "Home",
+          "transition": "show",
+          "controlId": "Vistex-DS",
+          "controlAggregation": "pages",
+          "title": "{i18n>Home}"
+        }
+      }
+    }
+  }
+}

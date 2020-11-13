@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'GTMS-icons';
+    src:
+    url('../fonts/GTMS-icons.woff2?n7o0ff') format('woff2'),
+    url('../fonts/GTMS-icons.ttf?n7o0ff') format('truetype'),
+    url('../fonts/GTMS-icons.woff?n7o0ff') format('woff'),
+    url('../fonts/GTMS-icons.svg?n7o0ff#GTMS-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="gtms-"], [class*=" gtms-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'GTMS-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.gtms-scale:before {
+    content: "\f012";
+}
+.gtms-overview-page:before {
+    content: "\e90a";
+}
+.gtms-sigma:before {
+    content: "\f002";
+}
+.gtms-vibes:before {
+    content: "\e90e";
+}
+.gtms-crossing:before {
+    content: "\f074";
+}
+.gtms-distribute:before {
+    content: "\e916";
+}
+.gtms-price:before {
+    content: "\e917";
+}
+.gtms-event:before {
+    content: "\f0e7";
+}
+.gtms-youtube-play:before {
+    content: "\f16a";
+}
+.gtms-twitter-square:before {
+    content: "\f081";
+}
+.gtms-linkedin-square:before {
+    content: "\f08c";
+}
+.gtms-facebook-square:before {
+    content: "\f082";
+}
+.gtms-instagram:before {
+    content: "\f16d";
+}
+.gtms-youtube:before {
+    content: "\f167";
+}
+.gtms-twitter:before {
+    content: "\ea96";
+}
+.gtms-linkedin:before {
+    content: "\f0e1";
+}
+.gtms-facebook:before {
+    content: "\f09a";
+}
+.gtms-instagram2:before {
+    content: "\ea92";
+}
+.gtms-whatsapp:before {
+    content: "\ea93";
+}
+.gtms-wikipedia:before {
+    content: "\f266";
+}
+.gtms-bonus-material:before {
+    content: "\f185";
+}
+.gtms-audio-cassette:before {
+    content: "\e909";
+}
+.gtms-booklet:before {
+    content: "\e901";
+}
+.gtms-cd-lp:before {
+    content: "\e905";
+}
+.gtms-classical:before {
+    content: "\e900";
+}
+.gtms-configurations:before {
+    content: "\e918";
+}
+.gtms-digital-lp:before {
+    content: "\e904";
+}
+.gtms-dvd:before {
+    content: "\e903";
+}
+.gtms-merchandise:before {
+    content: "\e908";
+}
+.gtms-projects:before {
+    content: "\e90d";
+}
+.gtms-publisher:before {
+    content: "\e90b";
+}
+.gtms-record-label:before {
+    content: "\e907";
+}
+.gtms-movie:before {
+    content: "\f008";
+}
+.gtms-resources:before {
+    content: "\e902";
+}
+.gtms-song:before {
+    content: "\f001";
+}
+.gtms-vinyl-lp:before {
+    content: "\e906";
+}
+.gtms-album:before {
+    content: "\e90c";
+}
+.gtms-single:before {
+    content: "\e90f";
+}
+.gtms-video-album:before {
+    content: "\e911";
+}
+.gtms-video-single:before {
+    content: "\e910";
+}
+.gtms-multimedia-album:before {
+    content: "\e913";
+}
+.gtms-multimedia-single:before {
+    content: "\e914";
+}
+.gtms-bundle:before {
+    content: "\e915";
+}
+.gtms-user-defined:before {
+    content: "\e03a";
+}
+.gtms-software:before {
+    content: "\e912";
+}
+.gtms-sheet-music:before {
+    content: "\e919";
+}
+.gtms-playlist:before {
+    content: "\e91a";
+}
+.gtms-midi:before {
+    content: "\e91b";
+}
+.gtms-multimedia:before {
+    content: "\e91c";
+}
+.gtms-djmix:before {
+    content: "\e91d";
+}

@@ -1,0 +1,23 @@
+.vuiHtMpLegendItem {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.vuiHtMpLegendCnt .vuiHtMpLegendItem:last-child{
+    margin-right: 0;
+}
+
+.vuiHtMpLegendItemBox {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    border-radius: 2px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.vuiHtMpLegendItemDescription {
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+}

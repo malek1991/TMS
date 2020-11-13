@@ -1,0 +1,77 @@
+.vuiAvaCntRowCell{
+    display: table-cell;
+    /*border-top: 1px solid #ddd;*/
+    /*border-left: 1px solid #ddd;*/
+    /*border-right: 1px solid #ddd;*/
+    /*border-bottom: 1px solid #ddd;*/
+    white-space: nowrap;
+    position: relative;
+}
+.vuiAvaCntRowCell.vuiAvaCntRowCellPadding{
+    padding: 4px;
+}
+.vuiAvaCntRowBall{
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #000;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+}
+.vuiAvaCntRowBall.vuiAvaCntRowBallZero {
+    border-color: #b3b3b3;
+}
+.vuiAvaCntRowBall100{
+    background-color: #5cb85c;
+    border-color: #5cb85c;
+}
+.vuiAvaCntRowBall25{
+    background-color: #fff;
+    border-color: #cbdec5;
+}
+
+.vuiAvaCntRowBall25 .vuiAvaCntRowPie{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    background: #cbdec5;
+}
+
+.vuiAvaCntRowBall50.vuiAvaCntRowBall{
+    background-color: #9dc395;
+    border-color: #9dc395;
+    background-image: -webkit-linear-gradient(right,#9dc395,#9dc395 50%,#fff 50%);
+}
+.vuiAvaCntRowCell>span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.vuiAvaCntRowBall75 {
+    background-color: #70ac6a;
+    border-color: #70ac6a;
+}
+
+.vuiAvaCntRowBall75 .vuiAvaCntRowPie {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background: #fff;
+}
+.vuiAvaCntRowStatusLabel {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+    margin-left: 5px;
+}

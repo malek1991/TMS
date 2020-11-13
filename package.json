@@ -1,0 +1,15 @@
+{
+  "name": "tpm_demo",
+  "version": "1.0.0",
+  "description": "",
+  "author": "PAC",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-if": "^2.0.2",
+    "gulp-ignore": "^3.0.0",
+    "gulp-pretty-data": "^0.1.2",
+    "gulp-uglify": "^3.0.0",
+    "gulp-ui5-preload": "^1.3.1"
+  }
+}
