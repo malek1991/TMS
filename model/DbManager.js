@@ -1,6 +1,6 @@
 ﻿sap.ui.define([
-    "sap/ui/model/json/JSONModel"
-],
+        "sap/ui/model/json/JSONModel"
+    ],
     function (JSONModel) {
         "use strict";
         return {
@@ -32,8 +32,8 @@
 
                     const oUrl = 'https://localhost:5001';
                     try {
-                        fetch(`${oUrl}${path}`, fetchData)
-                            .then(res => {
+                        fetch(oUrl+apiUrl, fetchData)
+                            .then(function (res) {
                                 if (res.status === 403 || res.status === 401) {
                                     return fnReject(res);
                                 }
